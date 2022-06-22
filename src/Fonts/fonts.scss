@@ -1,0 +1,103 @@
+ //proximaNova 
+@font-face {
+    font-family: 'ProximaNova-Regular';
+    src: url('./ProximaNova/Proxima Nova Regular.otf');
+  }
+  @font-face {
+    font-family: 'ProximaNova-Light';
+    src: url('./ProximaNova/Proxima Nova Light.otf');
+  }
+  @font-face {
+    font-family: 'ProximaNova-Bold';
+    src: url('./ProximaNova/Proxima Nova Bold.otf');
+  }
+  @font-face {
+    font-family: 'ProximaNova-SemiBold';
+    src: url('./ProximaNova/Proxima Nova Semibold.otf');
+  }
+  @font-face {
+    font-family: 'ProximaNova-Medium';
+    src: url('./ProximaNova/Proxima Nova Medium.otf');
+  }
+  @font-face {
+    font-family: 'ProximaNovaCond-Extrabld';
+    src: url('./ProximaNova/ProximaNovaCond-Extrabld.otf');
+  }
+  @font-face {
+    font-family: 'ProximaNovaCond-Bold';
+    src: url('./ProximaNova/ProximaNovaCond-Bold.otf');
+  }
+  @font-face {
+    font-family: 'ProximaNovaCond-Regular';
+    src: url('./ProximaNova/Proxima Nova Cond Reg.otf');
+  }
+  //TitilliumWeb
+
+  @font-face {
+    font-family: 'TitilliumWeb-SemiBold';
+    src: url('./titillium-web/TitilliumWeb-SemiBold.ttf');
+  }
+  @font-face {
+    font-family: 'TitilliumWeb-Bold';
+    src: url('./titillium-web/TitilliumWeb-Bold.ttf');
+  }
+  @font-face {
+    font-family: 'TitilliumWeb-Light';
+    src: url('./titillium-web/TitilliumWeb-Light.ttf');
+  }
+  @font-face {
+    font-family: 'TitilliumWeb-Regular';
+    src: url('./titillium-web/TitilliumWeb-Regular.ttf');
+  }
+  @font-face {
+    font-family: 'TitilliumWeb-Black';
+    src: url('./titillium-web/TitilliumWeb-Black.ttf');
+  }
+
+  
+
+  //Proxima font family
+.ProximaBold{
+  font-family: 'ProximaNova-Bold';
+}
+.ProximaLight{
+  font-family: 'ProximaNova-Light';
+}
+.ProximaReg{
+  font-family: 'ProximaNova-Regular';
+}
+.ProximaSbld{
+  font-family: 'ProximaNova-SemiBold';
+}
+.ProximaMd{
+  font-family: 'ProximaNova-Medium';
+}
+.ProximaCondReg{
+  font-family: 'ProximaNovaCond-Regular';
+}
+.ProximaCondExbld{
+  font-family: 'ProximaNovaCond-Extrabld';
+}
+.ProximaCondbld{
+  font-family: 'ProximaNovaCond-Bold';
+}
+
+
+//Proxima font family
+
+.TiWebBold{
+  font-family: 'TitilliumWeb-Bold';
+}
+.TiWebLight{
+  font-family: 'TitilliumWeb-Light';
+  font-weight:300;
+}
+.TiWebReg{
+  font-family: 'TitilliumWeb-Regular';
+}
+.TiWebSbld{
+  font-family: 'TitilliumWeb-SemiBold';
+}
+.TiWebBlack{
+  font-family: 'TitilliumWeb-Black';
+}

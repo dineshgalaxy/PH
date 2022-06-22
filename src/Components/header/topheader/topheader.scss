@@ -1,0 +1,18 @@
+@import "/src/styles/utilities.scss";
+@import "/src/styles/variable.scss";
+@import "/src/styles/mixins.scss";
+
+.header{
+    background-color: $black_color;
+    padding: 16px 0;
+    .headerText{
+        @include flex($justify:end);
+        .sIcon{
+            @include flex($justify:center);
+        }
+    }
+}
+.headerText{ span{
+    padding-left: 22px;
+}
+}

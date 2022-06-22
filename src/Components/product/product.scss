@@ -1,0 +1,80 @@
+@import "/src/styles/variable.scss";
+@import "/src/styles/mixins.scss";
+@import "/src/styles/icon-moon.scss";
+.productTop {
+	background-color: $light_black;
+	padding: 25px 0;
+	.product {
+		.productHeading {
+			@media only screen and (min-width: 767px) {
+				margin-bottom: 10px;
+			}
+			h2 {
+				font-size: $h3lg;
+				@media only screen and (min-width: 767px) {
+					font-size: $h3;
+				}
+			}
+		}
+		.productText {
+			@include flex($justify: space-between);
+			align-items: initial;
+			flex-wrap: wrap;
+			.product-quote {
+				@include width($maxWidth: 100%);
+				margin-bottom: 20px;
+				margin-right: 20px;
+				@media only screen and (min-width: 767px) {
+					@include width($maxWidth: 451px);
+					margin-bottom: 0;
+				}
+			}
+			button {
+				padding-top: 16px;
+				padding-bottom: 16px;
+			}
+			p {
+				margin-bottom: 20px;
+				line-height: 25px;
+				@media only screen and (min-width: 767px) {
+					margin-bottom: 42px;
+				}
+			}
+			@media only screen and (min-width: 767px) {
+				flex-wrap: nowrap;
+			}
+		}
+		.productMenu {
+			@include width($maxWidth: 100%);
+			::marker {
+				color: $white_color;
+				font-size: $h6xs;
+			}
+			ul {
+				list-style: none;
+				li {
+					display: flex;
+					&::before {
+						width: 3px;
+						height: 3px;
+						content: "";
+						background: $white_color;
+						position: absolute;
+						margin: 13px 0px 0px 0px;
+					}
+					a {
+						@include flex($justify: initial);
+						line-height: 30px;
+						padding-left: 12px
+					}
+				}
+			}
+			@media only screen and (min-width: 767px) {
+				@include width($maxWidth: 591px);
+			}
+		}
+	}
+	@media only screen and (min-width: 767px) {
+		padding: 120px 0;
+	}
+}

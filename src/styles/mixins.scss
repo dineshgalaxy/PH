@@ -1,0 +1,22 @@
+@import "/src/styles/utilities.scss";
+
+@mixin flex($justify){
+    display: flex;
+    align-items: center;
+    justify-content: $justify;
+}   
+@mixin  spacing($pt,$pb,$pl,$pr){
+    padding-top:$pt ;
+    padding-bottom: $pb;
+    padding-left: $pl;
+    padding-right: $pr;
+}
+@mixin width($maxWidth) {
+        max-width:$maxWidth;
+        width: 100%;
+}
+ 
+// padding
+//background image
+// width
+//menubar padding

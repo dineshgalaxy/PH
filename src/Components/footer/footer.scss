@@ -1,0 +1,72 @@
+@import "/src/styles/mixins.scss";
+.footer {
+    position: relative;
+    overflow: hidden;
+    padding: 25px 0;
+    &::after {
+        content: "";
+        background-image: url(../../images/Path841.png);
+        width: 487px;
+        position: absolute;
+        right: -118px;
+        top: 0px;
+        height: 484px;
+        background-position: center;
+        background-size: cover;
+        z-index: -1;
+        overflow: hidden;
+    }
+    @media only screen and (min-width:767px){
+        padding: 75px 0;
+    }
+}
+.footerItem {
+    @include flex($justify: initial);
+    align-items: initial;
+    .footAddress {
+        @include width($maxWidth: 337px);
+        margin-right: 21px;
+        .footLogo {
+            @include flex($justify: center);
+            @include width($maxWidth: 220px);
+            margin-bottom: 10px;
+        }
+        .address {
+            @include width($maxWidth: 160px);
+            p {
+                line-height: 25px;
+            }
+        }
+    }
+    .footMenu {
+        @include width($maxWidth: 290px);
+        
+        h2 {
+            margin-bottom: 12px;
+            padding-top: 5px;
+            @media only screen and (min-width:575px){
+                margin-bottom: 19px;
+            }
+        }
+        .quick-link {
+            @include flex($justify: space-between);
+            align-items: initial;
+            flex-wrap: wrap;
+            ul {
+                list-style: none;
+                li {
+                    line-height: 25px;
+                    a{
+                        &:hover {
+                            color: $primary_color;
+                            transition: all 1s ease;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (min-width:575px){
+        align-items:center;
+    }
+}

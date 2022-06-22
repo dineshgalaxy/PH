@@ -1,0 +1,78 @@
+@import "/src/styles/utilities.scss";
+@import "/src/styles/variable.scss";
+@import "/src/styles/mixins.scss";
+
+.springshocks {
+    position: relative;
+    background-color: $gray_color;
+    .spring {
+        @include flex($justify: initial);
+        align-items: flex-start;
+        flex-wrap: wrap;
+        @media only screen and(min-width:991px) {
+            flex-wrap: nowrap;
+            padding-top: 42px;
+            padding-bottom: 5px;
+        }
+        div {
+            margin: 0px 7px 0px;
+            @media only screen and(min-width:991px) {
+                margin: 0px 35px 0px;
+            }
+        }
+        .springImg {
+            @include flex($justify: center);
+            @include width($maxWidth: 500px);
+            margin-left: -50px;
+        }
+        .springCont {
+            @include width($maxWidth: 270px);
+            h2 {
+                margin-bottom: 10px;
+                font-size: $h3lg;
+                @media only screen and(min-width:1100px) {
+                    margin-bottom: 32px;
+                    font-size: $h3;
+                }
+            }
+            button {
+                padding: 16px 18px;
+                @media only screen and(min-width:1100px) {
+                    padding: 16px 48px;
+                }
+            }
+        }
+        .contactInfo {
+            @include flex($justify: space-between);
+            width: 100%;
+            flex-wrap: wrap;
+            padding-top: 30px;
+            @media only screen and(min-width:400px) {
+                flex-wrap: nowrap;
+            }
+        }
+        .springMenu {
+            margin-top: 20px;
+            ul {
+                list-style: none;
+                li {
+                    margin-bottom: 18px;
+                    display: flex;
+                    align-items: center;
+                    span {
+                        @include width($maxWidth: 40px);
+                        background: $primary_color;
+                        display: inline-block;
+                        border-radius: 50%;
+                        height: 40px;
+                        text-align: center;
+                        margin-right: 17px;
+                    }
+                }
+            }
+            @media only screen and(min-width:400px) {
+                @include width($maxWidth: 542px);
+            }
+        }
+    }
+}

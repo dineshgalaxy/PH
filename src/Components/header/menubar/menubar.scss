@@ -1,0 +1,43 @@
+@import "/src/styles/utilities.scss";
+@import "/src/styles/variable.scss";
+@import "/src/styles/mixins.scss";
+.menubar {
+    @include flex($justify: space-between);
+    padding-top: 26px;
+    padding-bottom: 30px;
+    .logo {
+        @include flex($justify: center);
+        @include width($maxWidth:291px);
+    }
+    .humburger {
+        padding-left: 20px;
+        @media only screen and (min-width: 991px) {
+            display: none;
+        }
+    }
+    .menu {
+        display: none;
+        ul {
+            list-style: none;
+            @include flex($justify: normal);
+
+            li {
+                padding-right: 18px;
+                a {
+                    letter-spacing: 0.45px;
+                    &:hover {
+                        color: $primary_color;
+                        transition: all 1s ease;
+                    }
+                }
+            }
+            button {
+                letter-spacing: 0.45px;
+                padding: 14px 16px;
+            }
+        }
+        @media only screen and (min-width: 991px) {
+            display: block;
+        }
+    }
+}

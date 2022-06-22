@@ -1,0 +1,76 @@
+@import "/src/Fonts/fonts.scss";
+@import "/src/styles/fontsize.scss";
+@import "/src/styles/variable.scss";
+@import "/src/styles/icon-moon.scss";
+
+.container {
+    max-width: 1150px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+.firstLetter::first-letter {
+    text-transform: capitalize;
+}
+
+.capital {
+    text-transform: capitalize;
+}
+.upper {
+    text-transform: uppercase;
+}
+.lower {
+    text-transform: lowercase;
+}
+.row {
+    display: flex;
+}
+.col_1 {
+    flex-basis: 8.33%;
+}
+.col_2 {
+    flex-basis: 16.66%;
+}
+.col_3 {
+    flex-basis: 25%;
+}
+.col_4 {
+    @media only screen and (min-width: 991px) {
+        flex-basis: 33.33%;
+    }
+}
+.col_5 {
+    flex-basis: 41.66%;
+}
+.col_6 {
+    @media only screen and (min-width: 575px) and (max-width: 991px) {
+        flex-basis: 50%;
+    }
+}
+.col_7 {
+    flex-basis: 58.33%;
+}
+.col_8 {
+    flex-basis: 66.66%;
+}
+.col_9 {
+    flex-basis: 75%;
+}
+.col_10 {
+    flex-basis: 83.33%;
+}
+.col_11 {
+    flex-basis: 91.66%;
+}
+.col_12 {
+    flex-basis: 100%;
+}
+//   .row .col:first-child{
+//     margin-left: 0;
+//     padding-left: 0;
+//   }
+
+//   .row .col:last-child {
+//     margin-right: 0;
+//      padding-left: 0;
+//   }

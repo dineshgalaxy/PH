@@ -1,0 +1,31 @@
+@import '/src/styles/utilities.scss';
+@import '/src/styles/mixins.scss';
+.heroBanner{
+  background-image: url('../../images/Group432.jpg');
+  background-size: cover;
+  background-repeat: no-repeat; 
+  min-height: 400px; 
+
+  .banner{
+      padding-top:25px;
+      padding-bottom:25px;
+      p{
+        line-height: 28px;
+      }
+      h1{
+        font-size:$h3;
+      @media only screen and (min-width:776px){
+          font-size:$h1;
+        }
+      }
+      @media only screen and (min-width:767px){
+        @include width($maxWidth:543px);
+        padding-top: 115px;
+        padding-bottom: 100px;
+  
+      }
+  }
+  @media only screen and (min-width:767px){
+    min-height: 600px; 
+  }
+}   

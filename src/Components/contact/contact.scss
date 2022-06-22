@@ -1,0 +1,76 @@
+@import "/src/styles/variable.scss";
+@import "/src/styles/mixins.scss";
+.contact {
+    background-image: url("../../images/Group387.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 15px 0;
+    .contactHeading {
+        text-align: center;
+        margin-bottom: 22px;
+    }
+    .contactForm {
+        @include width($maxWidth:606px);
+        margin: 0 auto;
+        input {
+            height: 56px;
+        }
+        input,
+        textarea {
+            display: block;
+            width: 100%;
+            border: 0;
+            padding: 0 14px;
+            font-size: $sm;
+            line-height: 1.5;
+            color: $black_color;
+            background-clip: padding-box;
+            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+            opacity: 0.36;
+            z-index: 9999999;
+            margin-bottom: 10px;
+            font-family: 'ProximaNova-Regular';
+            resize: none;
+
+            &:focus{
+                border: 0;
+                outline: 0;
+            }
+        }
+        textarea::placeholder {
+           line-height: 3;
+        }
+
+        .form-control {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -7px;
+            margin-left: -7px;
+            div {
+                flex-basis: 0;
+                flex-grow: 1;
+                max-width: 100%;
+                padding-right: 7px;
+                padding-left: 7px;
+            }
+        }
+        .btnContact {
+            @include flex($justify: end);
+            margin-top: 23px;
+            margin-bottom: 20px;
+
+            button {
+                padding: 18px 20px;
+                line-height: 22px;
+                letter-spacing: 0.9;
+            }
+        }
+    }
+    @media only screen and(min-width:767px) {
+        padding: 75px 0;
+    }
+}
+
+::placeholder {
+    color:$black_color !important;
+}
